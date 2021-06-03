@@ -504,6 +504,19 @@ main
   padding: 110px 0
   h2
     margin: 0 0 48px
+  .container
+    &:before
+      content: ''
+      position: absolute
+      bottom: 70px
+      right: 120px
+      background: url("../img/decor6.png") no-repeat center
+        size: 100%
+      width: 104px
+      height: 158px
+    >*
+      position: relative
+      z-index: 1
 
 .result-box
   display: flex
@@ -567,6 +580,7 @@ main
     font-weight: bold
     line-height: 1.08
     letter-spacing: 0.4px
+    margin: 0 0 10px
 
 .lesson-box__img
   position: absolute
@@ -689,11 +703,25 @@ main
   h2
     max-width: 331px
     margin: 0
+  .container
+    &:before
+      content: ''
+      position: absolute
+      top: 120px
+      left: 120px
+      background: url("../img/decor2.png") no-repeat center
+        size: 100%
+      width: 146px
+      height: 145px
+    >*
+      position: relative
+      z-index: 1
 
 .from-where-content
   margin: 0 0 0 auto
   max-width: 754px
   width: 100%
+
 
 .from-where-list__item
   margin: 0 0 35px
@@ -769,7 +797,7 @@ main
     content: '“'
     position: absolute
     left: 0
-    top: 0
+    top: 10px
     font-family: 'Arial', sans-serif
     font-size: 57.5px
     line-height: 0.43

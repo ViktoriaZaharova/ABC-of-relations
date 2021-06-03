@@ -1,46 +1,44 @@
 @import "vars"
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1300px)
-  .list-checkbox
-    max-width: 340px
-    font-size: 18px
-
-@media only screen and (max-width: 1200px)
+@media only screen and (max-width: 992px)
   .main-image
-    position: relative
+    max-width: 600px
     top: 0
-    right: 0
+    right: -40px
 
-  main
-    padding: 209px 0 30px
+  .main-list
+    font-size: 18px
+    li
+      padding: 12px
 
-    &:after
-      width: 106px
-      height: 105px
-      right: 117px
-      top: 676px
-      background: url("../img/decor2.png") no-repeat center
-        size: 100%
-      left: auto
+  .main-image-signature
+    top: 20px
+    left: 140px
+    font-size: 16px
+    max-width: 135px
 
-    &:before
-      background: url("../img/decor5.png") no-repeat center
-        size: 100%
-      width: 800px
-      height: 533px
-      right: 0
-      top: 212px
-      left: auto
+  .main-content
+    max-width: 650px
 
   .list-family
     padding: 0
 
+  .statistics
+    .wrapper-row
+      align-items: stretch
+      justify-content: space-around
+
   .statistics-box2 ul
     padding: 0 40px 0 0
 
+  .statistics:before
+    display: none
+
   .statistics-box
+    width: 49%
+    margin: 0 0 30px
     padding: 30px
+    height: auto
 
   .statistics-box-body
     h4
@@ -63,14 +61,8 @@
       margin: 0 auto 40px
 
   .from-where-content
-    max-width: 600px
-
-  .abc-img
-    max-width: 480px
-
-  .abc-content
-    max-width: 550px
-    padding: 0
+    max-width: none
+    margin: 40px 0 0
 
   .box-text
     font-size: 16px
@@ -122,24 +114,6 @@
     &:before
       display: none
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px)
-  .main-image
-    max-width: 700px
-    margin: 20px auto 0
-
-  .main-image-signature
-    top: 30px
-    left: 20%
-
-  .statistics:before
-    display: none
-
-  .statistics-box
-    width: 100%
-    height: auto
-    margin: 0 0 30px
-
   .from-where-list__item
     font-size: 16px
 
@@ -149,9 +123,6 @@
     min-width: 70px
     margin: 0 20px 0 0
 
-  .from-where-content
-    max-width: none
-    margin: 40px 0 0
 
   .from-where
     h2
@@ -187,13 +158,7 @@
     h3
       font-size: 18px
 
-  .abc-content
-    margin: 0 auto
-    max-width: none
-    width: 100%
 
-  .abc-img
-    margin: 0 auto
 
   .abc
     .btn-icon
@@ -242,7 +207,6 @@
         size: 100%
       z-index: -1
 
-
   .result-box
     font-size: 18px
     padding: 20px
@@ -254,8 +218,50 @@
     &:after
       display: none
 
+  .abc-content
+    max-width: 55%
+
+  .abc-img
+    max-width: 45%
+
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 870px)
+  .main-image
+    position: relative
+    top: 0
+    right: 0
+    max-width: 700px
+    margin: 20px auto 0
+
+  .main-image-signature
+    top: 30px
+    left: 20%
+
+  main
+    padding: 209px 0 30px
+
+    &:after
+      width: 106px
+      height: 105px
+      right: 117px
+      top: 676px
+      background: url("../img/decor2.png") no-repeat center
+        size: 100%
+      left: auto
+
+    &:before
+      background: url("../img/decor5.png") no-repeat center
+        size: 100%
+      width: 800px
+      height: 533px
+      right: 0
+      top: 212px
+      left: auto
+
+
+
+
 @media only screen and (max-width: 768px)
   .btn
     height: 50px
@@ -290,8 +296,7 @@
     .btn
       margin: 20px auto 0
 
-  .main-list
-    font-size: 18px
+
 
   .motivation-box
     background: url("../img/bg-overlay-mob1.png") no-repeat center
@@ -343,13 +348,6 @@
     margin: 30px 0 0 30px
     padding: 30px
 
-  .slick-arrow
-    width: 50px
-    height: 50px
-
-  .slider-nav
-    margin: 30px 0 0
-
   .author-content
     max-width: none
     width: 100%
@@ -367,6 +365,35 @@
   .verification
     .btn-icon
       display: flex
+
+  .from-where .container:before
+    display: none
+
+  .abc-content
+    margin: 0 auto
+    max-width: none
+    width: 100%
+
+  .abc-img
+    margin: 0 auto
+    max-width: none
+
+@media only screen and (max-width: 650px)
+  .statistics
+    .wrapper-row
+      flex-direction: column
+      align-items: center
+
+  .statistics-box
+    max-width: 310px
+    width: 100%
+
+  .statistics-box-number
+    width: 50px
+    height: 50px
+
+  .list-family
+    width: calc(100% - 50px)
 
 @media only screen and (max-width: 576px)
   .main-image
@@ -425,6 +452,100 @@
   .btn
     font-size: 15px
 
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (min-width: 992px) and (max-width: 1300px)
+  .container
+    max-width: 70vw
+    padding: 0 0.9375vw
 
+  .main-image
+    max-width: 700px
+    top: -60px
+
+  .main-image-signature
+    left: 180px
+    top: 50px
+
+  .list-family, .statistics-box2 ul
+    padding: 0
+
+  .list-family
+    width: calc(100% - 60px)
+    li
+      width: 40px
+      margin: 0 7px 10px 0
+
+  .statistics-box-number
+    width: 60px
+    height: 60px
+    font-size: 40px
+
+  .from-where-content
+    max-width: 480px
+
+  .from-where-list__item
+    margin: 0 0 30px
+
+  .from-where__icon
+    width: 70px
+    height: 70px
+    min-width: 70px
+    margin: 0 15px 0 0
+
+  .from-where .container:before
+    left: 80px
+
+  .verification-img
+    max-width: 280px
+    margin: 0 auto
+
+  .list-checkbox
+    max-width: 280px
+    padding: 50px 0 0
+
+  h2, .motivation-box h2
+    font-size: 2vw
+
+  h3, .name h4, .block_title
+    font-size: 1.5vw
+
+  h1
+    font-size: 2.625vw
+
+  .main-list, .statistics-box-body h4, .statistics-box p, .from-where-list__item, .motivation .box-text, .motivation-box, .reviews-box-content, .name p
+    font-size: 1.5vw
+
+  .list-checkbox, .result-box, .lesson-box h4, .lesson-box, .list-check, .block_hover, .box-text
+    font-size: 1.4vw
+
+  .lesson-box
+    padding: 3.125vw 3.125vw 14vw 1.875vw
+
+  .panel_heading
+    padding: 2.125vw
+
+  .btn
+    font-size: 1.125vw
+    height: auto
+    min-height: 4.875vw
+
+  .btn-icon
+    width: 20px
+
+  .author-photo
+    max-width: 28vw
+
+  .author-content
+    max-width: 32vw
+
+  .slick-arrow
+    width: 50px
+    height: 50px
+
+  .slider-nav
+    margin: 30px 0 0
+
+  .abc-content
+    max-width: 40vw
+
+  .abc-img
+    max-width: 30vw
