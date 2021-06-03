@@ -584,6 +584,8 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+  .verification .btn-icon {
+    display: none; }
 
 .list-checkbox {
   max-width: 435px;
@@ -698,6 +700,8 @@ main {
   padding: 70px 0; }
   .lessons h2 {
     margin: 0 0 50px; }
+  .lessons .btn-icon {
+    display: none; }
 
 .lesson-box {
   width: 24%;
@@ -1130,6 +1134,11 @@ main {
   margin: 0 -140px 0 60px; }
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px) {
+  .list-checkbox {
+    max-width: 340px;
+    font-size: 18px; } }
+
 @media only screen and (max-width: 1200px) {
   .main-image {
     position: relative;
@@ -1186,7 +1195,40 @@ main {
   .abc .box-text {
     margin: 20px 0; }
   .abc {
-    padding: 70px 0; } }
+    padding: 70px 0; }
+  .author-content {
+    max-width: 400px; }
+  .author-photo {
+    max-width: 350px; }
+  .list-check {
+    font-size: 16px;
+    margin: 30px 0 0; }
+  .subtitle {
+    letter-spacing: 1px; }
+  .author {
+    padding: 50px 0; }
+  .lesson-box {
+    font-size: 17px;
+    padding: 30px 30px 200px; }
+  .lessons {
+    padding: 50px 0; }
+    .lessons h2 {
+      margin: 0 0 30px; }
+  .verification-img {
+    margin: 20px auto 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 400px; }
+  .list-checkbox {
+    max-width: none;
+    padding: 0; }
+  .verification {
+    padding: 70px 0 0; }
+    .verification h2 {
+      margin: 0 auto 30px; }
+    .verification:before {
+      display: none; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1259,7 +1301,45 @@ main {
     font-size: 20px; }
   .block_hover {
     font-size: 16px;
-    line-height: normal; } }
+    line-height: normal; }
+  .author-content {
+    max-width: 350px; }
+  .lesson-box {
+    width: 49%;
+    padding: 30px 30px 300px;
+    height: auto; }
+  .lessons .btn-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .lessons .wrapper-row {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .price-wrapper:before {
+    display: none; }
+  .result {
+    padding: 70px 0;
+    position: relative;
+    z-index: 1; }
+    .result:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      opacity: .6;
+      left: -130px;
+      width: 100%;
+      height: 100%;
+      background: url("../img/figure-mob.png") no-repeat left center;
+        background-size: 100%;
+      z-index: -1; }
+  .result-box {
+    font-size: 18px;
+    padding: 20px; }
+  .col-3 {
+    width: 50%; }
+  .verification:after {
+    display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1340,7 +1420,24 @@ main {
     width: 50px;
     height: 50px; }
   .slider-nav {
-    margin: 30px 0 0; } }
+    margin: 30px 0 0; }
+  .author-content {
+    max-width: none;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 0 30px; }
+  .price-wrapper {
+    padding: 40px 20px; }
+  .result {
+    padding: 50px 0 30px; }
+    .result h2 {
+      margin: 0 0 30px; }
+  .verification .btn-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 @media only screen and (max-width: 576px) {
   .main-image {
@@ -1349,7 +1446,15 @@ main {
     font-size: 16px;
     max-width: 130px;
     left: 10%;
-    top: 0; } }
+    top: 0; }
+  .lesson-box {
+    width: 100%;
+    padding: 30px 30px 260px;
+    font-size: 15px; }
+    .lesson-box h4 {
+      font-size: 18px; }
+  .col-3 {
+    width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   main {
@@ -1374,7 +1479,9 @@ main {
     right: -45px; }
   .reviews-box-author {
     margin-left: 0;
-    max-width: 240px; } }
+    max-width: 240px; }
+  .btn {
+    font-size: 15px; } }
 
 @media only screen and (max-width: 320px) {
   /**/ }
