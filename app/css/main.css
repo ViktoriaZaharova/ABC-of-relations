@@ -1254,8 +1254,6 @@ main {
       margin: 0 auto 30px; }
     .verification:before {
       display: none; }
-  .from-where-list__item {
-    font-size: 16px; }
   .from-where__icon {
     width: 70px;
     height: 70px;
@@ -1267,7 +1265,7 @@ main {
   .from-where-list__item {
     padding: 0 0 20px;
     margin: 0 0 20px;
-    border-bottom: 1px solid #ede9ea;
+    font-size: 16px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
